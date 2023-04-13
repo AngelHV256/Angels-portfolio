@@ -354,38 +354,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #8a2387; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #fd6304,
-    #f916aa,
-    #5c0975
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #fd6304,
-    #f916aa,
-    #540066
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 0.8;
+  background-color: #590b73;
+  box-shadow: rgba(195, 46, 240, 0.38) 5px 5px 0px 15px;
   clip-path: circle(120px at center);
   transition: 0.5s;
 }
 
 .card:hover .circle:before {
-  background: #8a2387; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #fd6304,
-    #f916aa,
-    #5c0975
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #fd6304,
-    #f916aa,
-    #540066
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #070e2a;
   filter: blur(10px);
   clip-path: circle(800px at center);
 }
@@ -424,41 +400,79 @@ body {
 }
 
 .card .content h2 {
-  color: #cfdef3;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #32373c,
+    #eef2f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #32373c,
+    #eef2f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   filter: brightness(1.75);
   text-transform: uppercase;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
+.card .content h3 {
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #32373c,
+    #eef2f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #32373c,
+    #eef2f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.75);
+}
+
 .card .content p {
-  font-size: 2.5rem;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8e9eab,
+    #eef2f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8e9eab,
+    #eef2f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.75);
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 .card .content a {
   position: relative;
-  color: #ffffff;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right
+    #8e9eab,
+    #eef2f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8e9eab,
+    #eef2f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.75);
   padding: 1rem 2rem;
   border-radius: 1rem;
   text-decoration: none;
   font-weight: 900;
-}
-
-.backskill {
-  grid-area: 1 / 2 / 2 / 3;
-  border: #11ffbd solid 0rem;
-  background: #070e2a;
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-}
-
-.designskill {
-  grid-area: 1 / 3 / 2 / 4;
-  border: #11ffbd solid 0rem;
-  background: #070e2a;
-  box-shadow: rgba(195, 46, 240, 0.38) 5px -5px,
-    rgba(195, 46, 240, 0.3) 10px -10px, rgba(195, 46, 240, 0.2) 15px -15px,
-    rgba(195, 46, 240, 0.1) 20px -20px, rgba(195, 46, 240, 0.05) 25px -15px;
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
 }
