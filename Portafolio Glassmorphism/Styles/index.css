@@ -46,6 +46,10 @@ body {
   .navbar {
     width: 100%;
     max-width: 768px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -381,6 +385,22 @@ body {
   height: 50rem;
 }
 
+@media (max-width: 768px) {
+  .intome {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .intome {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+  }
+}
+
 .aboutme {
   grid-area: 1 / 1 / 2 / 2;
   color: #ffffff;
@@ -392,6 +412,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .aboutme {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme {
+    grid-area: 1 / 1 / 2 / 2;
+  }
 }
 
 .aboutme h1 {
@@ -445,6 +477,18 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .genInfo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .genInfo {
+    grid-area: 2 / 1 / 3 / 2;
+  }
 }
 
 .genInfo .info h1 {
