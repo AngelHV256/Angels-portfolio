@@ -156,7 +156,11 @@ body {
 
 @media (max-width: 480px) {
   .parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.75fr 1fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
   }
 }
 
@@ -172,6 +176,12 @@ body {
 @media (max-width: 768px) {
   .parent .title {
     grid-area: 1 / 1 / 2 / 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .parent .title {
+  
   }
 }
 
@@ -203,6 +213,12 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .title .mainTitle {
+    font-size: 4rem;
+  }
+}
+
 .title .mainTitleGlass {
   position: absolute;
   font-size: 10rem;
@@ -221,6 +237,13 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .title .mainTitleGlass {
+    font-size: 4rem;
+    margin-left: 0.3rem;
+  }
+}
+
 .parent .subtitle {
   grid-area: 1 / 2 / 2 / 3;
   position: relative;
@@ -235,6 +258,13 @@ body {
     grid-area: 1 / 2 / 2 / 3;
     align-items: start;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .parent .subtitle {
+    justify-content: left;
+    align-items: end;
   }
 }
 
@@ -267,6 +297,15 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .subtitle .subTitle {
+    font-size: 3rem;
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    top: 30rem;
+  }
+}
+
 .subtitle .subTitleGlass {
   position: absolute;
   right: -0.4rem;
@@ -285,14 +324,29 @@ body {
     font-size: 6rem;
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    top: 8.2rem;
+    top: 8rem;
     right: -0.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle .subTitleGlass {
+    font-size: 3rem;
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    top: 30.2rem;
+    left: 0.1rem;
   }
 }
 
 .parent .description {
   grid-area: 2 / 2 / 3 / 3;
   margin-right: 2rem;
+}
+
+@media (max-width: 480px) {
+  .parent .description {
+  }
 }
 
 .description .desc {
