@@ -151,7 +151,7 @@ body {
 
 @media (max-width: 768px) {
   .parent {
-    width:90%;
+    width: 90%;
     grid-template-columns: 1fr 0.25fr;
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
@@ -185,7 +185,6 @@ body {
 
 @media (max-width: 480px) {
   .parent .title {
-  
   }
 }
 
@@ -373,6 +372,12 @@ body {
   filter: brightness(1.75);
 }
 
+@media (max-width: 480px) {
+  .description .desc {
+    font-size: 3rem;
+  }
+}
+
 /* About me section Css  */
 .intome {
   display: grid;
@@ -393,11 +398,12 @@ body {
 
 @media (max-width: 480px) {
   .intome {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 50px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
   }
 }
 
@@ -446,6 +452,20 @@ body {
   margin-left: 2rem;
 }
 
+@media (max-width: 768px) {
+  .aboutme h1 {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme h1 {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+}
+
 .aboutme p {
   font-size: 2rem;
   margin-left: 2rem;
@@ -463,6 +483,18 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: brightness(1.75);
+}
+
+@media (max-width: 768px) {
+  .aboutme p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme p {
+    font-size: 1.6rem;
+  }
 }
 
 .genInfo {
@@ -509,6 +541,18 @@ body {
   filter: brightness(1.75);
 }
 
+@media (max-width: 768px) {
+  .genInfo .info h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .genInfo .info h1 {
+    font-size: 3.5rem;
+  }
+}
+
 .genInfo .info p {
   font-size: 3rem;
   background: #aaffa9; /* fallback for old browsers */
@@ -527,6 +571,20 @@ body {
   filter: brightness(1.75);
 }
 
+@media (max-width: 768px) {
+  .genInfo .info p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .genInfo .info p {
+    font-size: 2.5rem;
+  }
+}
+
+/* Skills CSS */
+
 .skills {
   width: 75%;
   height: 80rem;
@@ -539,6 +597,28 @@ body {
   column-gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .skills {
+    width: 100%;
+    height: 60rem;
+    padding: 0 1rem;
+    margin: 10rem auto 10rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    width: 100%;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    margin: 25rem auto 10rem auto;
+  }
+}
+
 .card {
   position: relative;
   width: 100%;
@@ -549,6 +629,12 @@ body {
   border-radius: 2rem;
   transition: 0.5s;
   font-size: 3rem;
+}
+
+@media (max-width: 480px) {
+  .card:hover {
+    height: 50rem;
+  }
 }
 
 .card .circle {
@@ -574,6 +660,12 @@ body {
   transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+  .card .circle::before {
+    clip-path: circle(8rem at center);
+  }
+}
+
 .card:hover .circle:before {
   background-color: #070e2a;
   filter: blur(10px);
@@ -590,9 +682,28 @@ body {
   transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+  .card img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    width: 50%;
+  }
+}
+
 .card:hover img {
   top: 80%;
   height: 35rem;
+}
+
+@media (max-width: 480px) {
+  .card:hover img {
+    visibility: hidden;
+    transition: 0s;
+  }
 }
 
 .card .content {
@@ -611,6 +722,12 @@ body {
 .card:hover .content {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 480px) {
+  .card:hover .content {
+    border: #11ffbd solid 1px;
+  }
 }
 
 .card .content h2 {
@@ -673,8 +790,7 @@ body {
   position: relative;
   background: #8e9eab; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right
-    #8e9eab,
+    to right #8e9eab,
     #eef2f3
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
