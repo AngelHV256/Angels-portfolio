@@ -185,7 +185,6 @@ body {
 
 @media (max-width: 480px) {
   .parent .title {
-
   }
 }
 
@@ -636,7 +635,7 @@ body {
 
 @media (max-width: 480px) {
   .card:hover {
-    height: 50rem;
+    height: 40rem;
   }
 }
 
@@ -735,7 +734,6 @@ body {
 
 @media (max-width: 480px) {
   .card:hover .content {
-    border: #11ffbd solid 1px;
   }
 }
 
@@ -759,6 +757,18 @@ body {
   font-weight: 900;
 }
 
+@media (max-width: 768px) {
+  .card .content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card .content h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .card .content h3 {
   background: #8e9eab; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -774,6 +784,19 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: brightness(1.75);
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .card .content h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card .content h3 {
+    font-size: 1.6rem;
+  }
 }
 
 .card .content p {
@@ -791,8 +814,20 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: brightness(1.75);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .card .content p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card .content p {
+    font-size: 2.2rem;
+  }
 }
 
 .card .content a {
@@ -814,4 +849,17 @@ body {
   border-radius: 1rem;
   text-decoration: none;
   font-weight: 900;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+  .card .content a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card .content a {
+    font-size: 1.8rem;
+  }
 }
