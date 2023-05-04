@@ -340,7 +340,7 @@ body {
     writing-mode: vertical-rl;
     text-orientation: initial;
     top: 20.2rem;
-    right: -0.9rem;
+    right: -0.1rem;
   }
 }
 
@@ -637,6 +637,12 @@ body {
 @media (max-width: 480px) {
   .card:hover {
     height: 50rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 20rem;
   }
 }
 
