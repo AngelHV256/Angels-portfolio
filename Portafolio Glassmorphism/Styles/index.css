@@ -161,10 +161,10 @@ body {
 @media (max-width: 480px) {
   .parent {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.75fr 1fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.75fr 0.25fr;
     grid-column-gap: 0px;
-    grid-row-gap: 25px;
+    grid-row-gap: 0px;
   }
 }
 
@@ -185,6 +185,7 @@ body {
 
 @media (max-width: 480px) {
   .parent .title {
+
   }
 }
 
@@ -303,9 +304,10 @@ body {
 @media (max-width: 480px) {
   .subtitle .subTitle {
     font-size: 3rem;
-    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
     text-orientation: initial;
-    top: 30rem;
+    top: 20rem;
+    left: 11rem;
   }
 }
 
@@ -335,10 +337,10 @@ body {
 @media (max-width: 480px) {
   .subtitle .subTitleGlass {
     font-size: 3rem;
-    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
     text-orientation: initial;
-    top: 30.2rem;
-    left: 0.1rem;
+    top: 20.2rem;
+    right: -0.9rem;
   }
 }
 
@@ -349,6 +351,7 @@ body {
 
 @media (max-width: 480px) {
   .parent .description {
+    grid-area: 2 / 1 / 3 / 3;
   }
 }
 
