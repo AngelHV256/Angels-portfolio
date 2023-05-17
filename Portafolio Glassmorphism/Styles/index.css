@@ -184,8 +184,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .parent .title {
-  }
 }
 
 .title .mainTitle {
@@ -733,8 +731,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .card:hover .content {
-  }
 }
 
 .card .content h2 {
@@ -862,4 +858,10 @@ body {
   .card .content a {
     font-size: 1.8rem;
   }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
